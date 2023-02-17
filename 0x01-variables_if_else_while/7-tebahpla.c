@@ -2,7 +2,7 @@
 # include <stdlib.h>
 
 /**
- * main - Program to print alphabet in reverse
+ * main - Program to print lowercase alphabet in reverse order
  * Return: Always 0 (Success)
  */
 
@@ -10,7 +10,7 @@ int main(void)
 {
 	char i;
 
-	for (i = 'z'; i >= 'a'; i++)
+	for(i = 'z'; i >= 'a'; i++)
 	{
 		putchar(i);
 	}
