@@ -8,8 +8,6 @@
 
 int main(void)
 {
-	int num[2];
-
 	int i;
 	int j;
 
@@ -19,8 +17,8 @@ int main(void)
 		{
 			if (i != j && j != i)
 			{
-				putchar(num[i]);
-				putchar(num[j]);
+				putchar(i + '0');
+				putchar(j + '0');
 			}
 		}
 	}
