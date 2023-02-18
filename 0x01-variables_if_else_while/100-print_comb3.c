@@ -19,7 +19,8 @@ int main(void)
 		{
 			if (i != j && j != i)
 			{
-				putchar(num[i], num[j]);
+				putchar(num[i]);
+				putchar(num[j]);
 			}
 		}
 	}
