@@ -13,9 +13,9 @@ int main(void)
 	int i;
 	int j;
 
-	for (i = '0'; i <= '9'; ++i)
+	for (i = 47; i < 58; ++i)
 	{
-		for (j = '0'; j <= '9'; ++j)
+		for (j = 47; j < 58; ++j)
 		{
 			if (i != j && j != i)
 			{
