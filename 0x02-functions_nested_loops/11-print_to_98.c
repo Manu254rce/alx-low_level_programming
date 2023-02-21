@@ -10,7 +10,7 @@ void print_to_98(int n)
 	int i;
 	int j;
 
-	while ( i = n; i <= '9'; i++ )
+	while (i <= '9')
 	{
 		for (j = n; j <= '8'; j++ )
 		{
@@ -23,5 +23,9 @@ void print_to_98(int n)
 				_putchar(' ');
 			}
 		}
+
+		i ++;
 	}
+
+	_putchar ('\n');
 }
