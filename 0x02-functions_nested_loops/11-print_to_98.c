@@ -8,10 +8,11 @@
 void print_to_98(int n)
 {
 	int i;
+	int j;
 
 	while ( i = n; i <= '9'; i++ )
 	{
-		for (j = n; j <= '8', j++ )
+		for (j = n; j <= '8'; j++ )
 		{
 			_putchar(i);
 			_putchar(j);
