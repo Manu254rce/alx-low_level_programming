@@ -7,17 +7,17 @@
 
 void print_to_98(int n)
 {
-	int i;
+	int i = n;
 	int j;
 
-	while (i <= '9')
+	while (i <= 57)
 	{
-		for (j = n; j <= '8'; j++ )
+		for (j = n; j <= 56; j++ )
 		{
 			_putchar(i);
 			_putchar(j);
 
-			if (i < 98)
+			if (i < 57 && j < 56)
 			{
 				_putchar(',');
 				_putchar(' ');
