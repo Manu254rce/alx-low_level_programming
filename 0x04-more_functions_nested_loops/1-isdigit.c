@@ -2,6 +2,7 @@
 
 /**
  * _isdigit- Function that checks whether a character is a digit or not
+ * c - integer imported from main.h
  * Return: Always 0.
  */
 
