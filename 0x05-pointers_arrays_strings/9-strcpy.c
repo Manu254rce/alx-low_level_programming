@@ -10,7 +10,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	char *strcpy(*restrict dest, *restrict src);
+	char *strcpy(char *restrict dest, const char *restrict src);
 
 	return (*dest);
 }
