@@ -10,7 +10,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	char *strcpy(...*dest, ...*src);
+	char *strcpy(*restrict dest, *restrict src);
 
 	return (*dest);
 }
