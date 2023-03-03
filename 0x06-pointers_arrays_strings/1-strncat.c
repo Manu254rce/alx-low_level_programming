@@ -1,11 +1,11 @@
 # include "main.h"
 
 /**
- * *_strncat - program to concatenate strings with strncat
+ * _strncat - program to concatenate strings with strncat
  * @src: Source string
  * @dest: destination string
  * @n: iterator variable
- * Return: Always 0
+ * Return: 'dest'
  */
 
 char *_strncat(char *dest, char *src, int n)
