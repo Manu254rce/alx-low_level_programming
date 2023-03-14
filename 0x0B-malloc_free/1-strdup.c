@@ -11,9 +11,9 @@ char *_strdup(char *str)
 	int n, j;
 	char *str2;
 
-	if (str == 0)
+	if (str == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 
 	for (n = 0; str[n] < '\0'; ++n)
