@@ -1,7 +1,7 @@
 # include "main.h"
 
 /**
-* *create_array - program to concatenate two strings
+* *create_array - program tocreate array of specific strings
 * @size: size of string to be used
 * @c: string
 * Return: Always Success
@@ -26,7 +26,7 @@ char *create_array(unsigned int size, char c)
 
 	for (i = 0; i < size; ++i)
 	{
-		*(str + i) = c;
+		str[i] = c;
 	}
 
 	*(str + i) = '\0';
