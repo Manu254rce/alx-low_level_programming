@@ -24,7 +24,7 @@ char *create_array(unsigned int size, char c)
 		*(str + i) = c;
 	}
 
-	*(str + i) = NULL;
+	*(str + i) = '\0';
 
 	return (str);
 }
