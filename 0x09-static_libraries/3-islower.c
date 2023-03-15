@@ -3,6 +3,7 @@
 
 /**
  * _islower-Function that checks for lowercase letters
+ * @c: parameter that will be checked
  * Return: Always 0 (Success)
  */
 
