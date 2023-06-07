@@ -7,7 +7,7 @@
  * Return: x raised o power y
  */
 
-int _pow_recursion(int x, in y)
+int _pow_recursion(int x, int y)
 {
 	if (y == 0)
 		return (-1);
