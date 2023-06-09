@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-#pragma GCC dignostic push
-#pragma GCC diagnostic ignored "-Wunused-parameter"
+#include "main.h" 
 
 /**
  * main - Program that prints out the name of the command used to run it
