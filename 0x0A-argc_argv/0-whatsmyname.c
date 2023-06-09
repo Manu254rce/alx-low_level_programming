@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.h"
 
 /**
  * main - Program that prints out the name of the command used to run it
