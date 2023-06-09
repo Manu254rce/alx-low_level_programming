@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * main- program ha add wo ineger argumens 
- * @argc: Argumen coun
- * @argv: Argumen vecor
- * Reurn: Success
+ * main- program that add two integer arguments
+ * @argc: Argument count
+ * @argv: Argument vector
+ * Return: Success
  */
 
 int main(int argc, char *argv[])
