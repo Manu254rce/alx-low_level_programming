@@ -1,7 +1,8 @@
 # include "function_pointers.h"
 
 /**
- * array_iterator - function that executes another function given another array param
+ * array_iterator - function that executes another function
+ * given another array param
  * @array: ptr to an array
  * @size: array sizee
  * @action: func. to be called
