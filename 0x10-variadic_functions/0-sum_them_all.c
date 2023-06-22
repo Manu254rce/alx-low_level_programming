@@ -20,9 +20,11 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		if (i == 0)
 			sum = 0;
-
-		val = va_arg(nums, int);
-		sum += val;
+		else
+		{
+			val = va_arg(nums, int);
+			sum += val;
+		}
 	}
 
 	va_end(nums);

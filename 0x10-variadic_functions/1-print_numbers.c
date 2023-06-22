@@ -1,4 +1,4 @@
-# include "variadic_functions.c"
+# include "variadic_functions.h"
 
 /**
  * print_numbers - function that prints numbers
@@ -23,6 +23,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		++i;
 	}
 
-	va_end(chars);
+	va_end(nums);
 	printf("\n");
 }
