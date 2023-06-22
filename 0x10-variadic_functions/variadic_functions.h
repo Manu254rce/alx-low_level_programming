@@ -1,8 +1,6 @@
 # ifndef VARFUNC_H
 # define VARFUNC_H
 
-# pragma -GCC diagnostic ignored "-Wunused-parameter"
-
 # include <stdio.h>
 # include <stdlib.h>
 # include <stdarg.h>
