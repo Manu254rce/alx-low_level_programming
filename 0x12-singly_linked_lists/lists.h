@@ -3,6 +3,7 @@
 
 # include <stdio.h>
 # include <stdib.h>
+# include <string.h>
 
 /**
  * struct list_s - singly linked list
