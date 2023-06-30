@@ -1,5 +1,5 @@
-# ifndef LISS.H
-# define LISS.H
+# ifndef LISTS.H
+# define LISTS.H
 
 # include <stdio.h>
 # include <stdib.h>
