@@ -1,7 +1,7 @@
 # include "main.h"
 
 /**
- * int append_text_to_file - appends text at the EOF
+ * append_text_to_file - appends text at the EOF
  * @filename: name of the file
  * @text_content: content to be appended
  * Return: 1 on success, -1 on failure
