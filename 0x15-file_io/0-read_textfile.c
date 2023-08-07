@@ -1,5 +1,12 @@
 # include "main.h"
 
+/**
+ * read_textfile - function that reads text from a file
+ * @filename: the path to the file
+ * @letters: the text content of the file
+ * Return: the read characters of the file
+ */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
