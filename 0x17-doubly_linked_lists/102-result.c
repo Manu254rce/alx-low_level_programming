@@ -17,7 +17,7 @@ bool is_palindrome(int n)
 		n /= 10;
 	}
 
-	return original == reversed;
+	return (original == reversed);
 }
 
 /**
@@ -42,5 +42,5 @@ int main(void)
 	}
 
 	printf("%d\n", largest);
-	return 0;
+	return (0);
 }
