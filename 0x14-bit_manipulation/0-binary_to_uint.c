@@ -1,7 +1,7 @@
 # include "main.h"
 
 /**
- * unsigned int binary_to_uint - funcion that converts binary number
+ * binary_to_uint - funcion that converts binary number
  * to unsigned int
  * @b: binary digit pointer
  * Return: converted number, or 0
