@@ -4,7 +4,7 @@
  * print_binary - function that prints binary form
  * of a number
  * @n: ineger value
- * Reurn: binary value of he number
+ * Return: binary value of he number
  */
 
 void print_binary(unsigned long int n)
