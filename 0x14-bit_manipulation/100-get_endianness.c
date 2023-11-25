@@ -1,8 +1,9 @@
 # include "main.h"
 
 /**
- * get_endianess - checks the endianness and returns whether 
+ * get_endianness - checks the endianness and returns whether
  * it is little or big
+ * Return: 1 if big, 0 if littie
  */
 
 int get_endianness(void)
