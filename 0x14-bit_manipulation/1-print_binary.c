@@ -4,27 +4,28 @@
  * print_binary - function that prints binary form
  * of a number
  * @n: ineger value
- * Return: binary value of he number
  */
 
 void print_binary(unsigned long int n)
 {
-	int size = sizeof(unsigned long int) * 8;
+	unsigned long int i, j, k;
 
-	int lead = 1;
-	int i, bit;
-
-	for (i = size - 1; i >= 0; i--)
+	if (n == 0)
 	{
-		bit = (n >> i) & 1;
-
-		if (bit || !leadingZeros)
-		{
-			putchar(bit ? '1' : '0');
-			lead = 0;
-		}
+		_putchar('0');
+		return;
 	}
 
-	if (leadingZeros)
-		putchar('0');
+	for (i = 0; n >> i; i++)
+		;
+
+	for (j = i - 1; j + 1; j--)
+	{
+		k = n >> j;
+		if (k & 1)
+			_putchar('1');
+
+		else
+			_putchar('0');
+	}
 }
