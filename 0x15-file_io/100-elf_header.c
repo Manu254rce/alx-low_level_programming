@@ -8,69 +8,66 @@
 
 void print_magic(unsigned char *e_ident)
 {
-      	int i;
+	int i;
 
-   	printf("  Magic:   ");
-
-    	for (i = 0; i < EI_NIDENT; i++)
+	printf("  Magic:   ");
+	for (i = 0; i < EI_NIDENT; i++)
 		printf("%02x ", e_ident[i]);
-    	printf("\n");
+
+	printf("\n");
 }
 
 /**
- * print_class_data_version - prints the class, data, and version of the elf header
+ * print_class_data_version - prints the class, data,
+ * and version of the elf header
  * @elf_header: the elf header
  * Return: 0 on success, 1 on failure
  */
 
 void print_class_data_version(Elf64_Ehdr *elf_header)
 {
-    	printf("  Class:                             ");
-
+	printf("  Class:                             ");
 	switch (elf_header->e_ident[EI_CLASS])
-    	{
+	{
 		case ELFCLASSNONE:
-	    		printf("none\n");
-	    		break;
+			printf("none\n");
+			break;
 		case ELFCLASS32:
-	    		printf("ELF32\n");
-	    		break;
+			printf("ELF32\n");
+			break;
 		case ELFCLASS64:
-	    		printf("ELF64\n");
-	    		break;
+			printf("ELF64\n");
+			break;
 		default:
-	    		printf("<unknown: %x>\n", elf_header->e_ident[EI_CLASS]);
-    	}
-
-    	printf("  Data:                              ");
-
+			printf("<unknown: %x>\n", elf_header->e_ident[EI_CLASS]);
+	}
+	printf("  Data:                              ");
 	switch (elf_header->e_ident[EI_DATA])
-    	{
+	{
 		case ELFDATANONE:
-	    		printf("none\n");
-	    		break;
+			printf("none\n");
+			break;
 		case ELFDATA2LSB:
-	    		printf("2's complement, little endian\n");
-	    		break;
+			printf("2's complement, little endian\n");
+			break;
 		case ELFDATA2MSB:
-	    		printf("2's complement, big endian\n");
-	    		break;
+			printf("2's complement, big endian\n");
+			break;
 		default:
-	    		printf("<unknown: %x>\n", elf_header->e_ident[EI_DATA]);
-    	}
-
-    	printf("  Version:                           ");
-    	switch (elf_header->e_ident[EI_VERSION])
-    	{
+			printf("<unknown: %x>\n", elf_header->e_ident[EI_DATA]);
+	}
+	printf("  Version:                           ");
+	switch (elf_header->e_ident[EI_VERSION])
+	{
 		case EV_NONE:
-	    		printf("none\n");
-	    		break;
+			printf("none\n");
+			break;
 		case EV_CURRENT:
-	    		printf("1 (current)\n");
-	    		break;
+			printf("1 (current)\n");
+			break;
 		default:
-	    		printf("<unknown: %x>\n", elf_header->e_ident[EI_VERSION]);
-    	}
+			printf("<unknown: %x>\n", elf_header->e_ident[EI_VERSION]);
+	}
 }
 
 /**
@@ -136,7 +133,5 @@ int print_elf_header(Elf64_Ehdr *elf_header, char *file)
 	print_class_data_version(elf_header);
 	print_os_abi(elf_header);
 
-return (0);
+	return (0);
 }
-
-   
