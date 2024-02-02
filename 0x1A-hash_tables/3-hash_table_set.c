@@ -12,14 +12,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	int index;
 	hash_node_t *node;
+
 	if (ht == NULL || key == NULL || strlen(key) == 0)
 		return (0);
-	
+
 	index = hash_djb2((const unsigned char *)key) % ht->size;
 	node = malloc(sizeof(hash_node_t));
 	if (node == NULL)
 		return (0);
-	
+
 	node->key = strdup(key);
 	if (node->key == NULL)
 	{
