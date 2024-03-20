@@ -10,11 +10,7 @@ all: $(NAME)
 
 # Rule for building exec
 $(NAME): $(OBJ)
-	$(CC) -Wall -Werror -Wextra -pedantic -std=gnu89 -o $(NAME) $(OBJ)
-
-# Pattern rule for object files
-%.o: %.c
-	$(CC) -c $< -o $@
+	$(CC) -Wall -Werror -Wextra -pedantic -std=gnu89 $(OBJ) -o $(NAME)
 
 # Rule for cleaning up
 clean:
