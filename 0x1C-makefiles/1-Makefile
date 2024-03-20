@@ -1,0 +1,15 @@
+# This is a simple Makefile
+
+CC = gcc
+SRC = school.c main.c
+
+# Rule for 'all'
+all: school
+
+# Rule for building exec
+school: $(SRC)
+	$(CC) -Wall -Werror -Wextra -pedantic -std=gnu89 $(SRC) -o school
+
+# Rule for cleaning up
+clean:
+	rm -rf school

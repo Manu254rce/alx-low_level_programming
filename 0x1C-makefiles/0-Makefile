@@ -1,0 +1,9 @@
+# This is a simple Makefile
+
+# Rule for 'all'
+all:
+	gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c school.c -o school
+
+# Rule for clean
+clean:
+	rm -f school

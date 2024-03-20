@@ -1,0 +1,21 @@
+# This is a simple Makefile
+
+CC = gcc
+SRC = school.c main.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+
+# Rule for 'all'
+all: $(NAME)
+
+# Rule for building exec
+$(NAME): $(OBJ)
+	$(CC) -Wall -Werror -Wextra -pedantic -std=gnu89 -o $@ $^
+
+# Pattern rule for object files
+%.o: %.c
+	$(CC) -c $< -o $@
+
+# Rule for cleaning up
+clean:
+	rm -rf school
