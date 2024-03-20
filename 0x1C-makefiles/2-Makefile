@@ -7,10 +7,8 @@ NAME = school
 
 # Rule for 'all'
 all: $(OBJ)
-	$(CC) -Wall -Werror -Wextra -pedantic -std=gnu89 $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 # Rule for cleaning up
 clean:
 	rm -rf school
-
-.PHONY: all
