@@ -6,10 +6,7 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 
 # Rule for 'all'
-all: $(NAME)
-
-# Rule for building exec
-$(NAME): $(OBJ)
+all: $(OBJ)
 	$(CC) -Wall -Werror -Wextra -pedantic -std=gnu89 $(OBJ) -o $(NAME)
 
 # Rule for cleaning up
