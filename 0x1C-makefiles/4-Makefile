@@ -1,5 +1,4 @@
 # This is a simple Makefile
-
 # Variables
 CC = gcc
 SRC = $(wildcard *.c)
@@ -9,24 +8,17 @@ RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89
 
 # Rules
-all: $(NAME)
-
-$(NAME): $(OBJ)
+all: $(OBJ)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
 clean:
-	$(RM) *~ \#*\#
+	$(RM) *~ $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
 fclean: clean oclean
-	$(RM) $(NAME)
 
-re: fclean all
+re: oclean all
 
 .PHONY: all clean oclean fclean re
-
