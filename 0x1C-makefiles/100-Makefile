@@ -6,6 +6,7 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
+.PHONY: all clean oclean fclean re
 
 # Rules
 # Rule for running make
@@ -16,15 +17,14 @@ all: m.h $(OBJ)
 # Rule for deleting all Vim/ Emacs temporary files
 
 clean:
+	$(RM) *~ $(NAME)
 	find . -type f -name '*~' -delete
 	find . -type f -name '\#*\#' -delete
 	find . -type f -name '$(NAME)' -delete
 
 oclean:
-	find . -type f -name '*.o' -delete
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
 re: oclean all
-
-.PHONY: all clean oclean fclean re
