@@ -1,0 +1,36 @@
+# This is a complete Makefile that deletes all temp files in Vim/Emacs
+
+# Variables
+CC = gcc
+SRC = $(wildcard *.c)
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89
+
+# Rules
+# Rule for running make
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
+
+$(OBJ): %.o: %.c m.h
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Rule for deleting all Vim/ Emacs temporary files
+
+clean:
+	find . -type f -name '*~' -delete
+	find . -type f -name '\#*\#' -delete
+	find . -type f -name '$(NAME)' -delete
+
+oclean:
+	find . -type f -name '*.o' -delete
+
+fclean: clean oclean
+
+re: fclean all
+
+.PHONY: all clean oclean fclean re
