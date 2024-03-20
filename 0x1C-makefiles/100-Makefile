@@ -18,9 +18,6 @@ all: m.h $(OBJ)
 
 clean:
 	$(RM) *~ $(NAME)
-	find . -type f -name '*~' -delete
-	find . -type f -name '\#*\#' -delete
-	find . -type f -name '$(NAME)' -delete
 
 oclean:
 	$(RM) $(OBJ)
